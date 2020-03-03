@@ -1,6 +1,6 @@
-import * as React from 'react';
+import * as React from '../src/features/blog/node_modules/react';
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+import { ServerStyleSheet } from '../src/features/blog/node_modules/styled-components';
 import { resetServerContext } from 'react-beautiful-dnd';
 
 export default class MyDocument extends Document {

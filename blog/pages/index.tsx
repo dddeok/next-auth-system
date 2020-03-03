@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from '../src/features/blog/node_modules/react';
 import { NextPage } from 'next';
 
-import Main from '../features/blog/Main';
+import Main from '../src/features/blog/Main';
 const Index: NextPage = () => <Main />;
 
 Index.getInitialProps = async () => {

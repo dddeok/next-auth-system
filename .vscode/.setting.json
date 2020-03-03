@@ -1,29 +1,15 @@
 {
-	"eslint.run": "onSave",
-	"eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
+  "eslint.enable": true,
+  "eslint.packageManager": "npm",
+  "eslint.workingDirectories": [
     {
-      "language": "typescript",
-      "autoFix": true
+      "changeProcessCWD": true,
+      "directory": "./blog"
     },
     {
-      "language": "typescriptreact",
-      "autoFix": true
+      "changeProcessCWD": true,
+      "directory": "./core"
     }
   ],
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
-  }
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
