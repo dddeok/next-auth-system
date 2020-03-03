@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { NextPage } from 'next';
 
-
-const Index: NextPage= () => <div>TEST</div>;
+import Main from '../features/blog/Main';
+const Index: NextPage = () => <Main />;
 
 Index.getInitialProps = async () => {
   const title = 'welcome!';
