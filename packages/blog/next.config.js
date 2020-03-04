@@ -7,6 +7,11 @@ const withTM = require('next-transpile-modules')(['core']);
 const fs = require('fs');
 const path = require('path');
 
+const env = require(`dotenv-defaults`).config({
+  path: './.env',
+  encoding: 'utf8',
+  defaults: './.env.defaults',
+});
 // Where your antd-custom.less file lives
 const themeVariables = lessToJS(
   fs.readFileSync(path.resolve(__dirname, './src/assets/antd-custom.less'), 'utf8'),
@@ -46,5 +51,10 @@ module.exports = withTM(
 
       return config;
     },
+
+    resolve: {
+      modules: ['node_modules'],
+    },
+    env: env.parsed,
   }),
 );
