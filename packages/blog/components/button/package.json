@@ -1,0 +1,22 @@
+{
+  "name": "@bit/dddeok.react-tutorial.button",
+  "version": "0.0.2",
+  "homepage": "https://bit.dev/dddeok/react-tutorial/button",
+  "main": "dist/CircleButton.tsx",
+  "dependencies": {
+    "styled-components": "^5.0.1",
+    "antd": "^4.0.0",
+    "react": "^16.13.0",
+    "@types/styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.23"
+  },
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.14"
+    }
+  }
+}
