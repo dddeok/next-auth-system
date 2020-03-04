@@ -1,15 +1,19 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import CircleButton from '@dddeok/core/src/components/CircleButton';
 import { Button } from 'antd';
 const Container = styled.div`
   width: 1400px;
   height: 100%;
 `;
 
+interface Props {
+  title?: string;
+}
 const Main = () => {
   return (
     <Container>
-      <Button>테스트</Button>
+      <CircleButton className="TEST" title="TEST" />
     </Container>
   );
 };
